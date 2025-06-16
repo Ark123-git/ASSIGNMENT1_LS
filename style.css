@@ -1,0 +1,260 @@
+*{
+   margin:0;
+   padding:0;
+
+   font-family:Arial, sans-serif;
+   box-sizing:border-box;
+}
+body{
+    background-color:black;
+    color:white;
+    width:100%;
+    height: 100%;
+}
+
+.container{
+    /* display:flex;
+    align-items:center; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+   position: fixed; 
+   /* height:200px; */
+   position: fixed; 
+   width:100vw;
+    padding:15px 5%;
+    background-color:black;
+    border:0;
+   border-bottom: 3px;
+    border-style: solid;
+    border-color: rgb(128, 128, 128);
+margin-bottom: 100px;
+z-index:1000;
+
+}
+.iitb-logo{
+    width:50px;
+    object-fit: cover;
+    margin-right: 500px;
+  
+}
+nav{
+    display:flex;
+    align-items:center; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li {
+    text-decoration: none;
+display:inline-block;
+list-style:none;
+margin:4px 6px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(0, 255, 255);
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:4px;
+    background-color: rgb(10, 77, 246);
+    position: absolute;
+    left:0;
+    bottom:-6px;
+ transition: width 0.4s ease;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+
+/*------------ Home section---------- */
+#home{
+    padding-top: 150px;
+   margin-bottom: 100px;
+}
+
+#home-section-heading{
+font-size: 80px;
+margin-bottom: 40px;
+}
+#iitb-text{
+   color:brown
+}
+#home-p{
+    margin-left: 300px;
+   line-height: 1.5;
+    font-size: 60px;
+    font-style: italic;
+    word-wrap: break-word;      
+    overflow-wrap: break-word;   
+    hyphens: auto;  
+}
+/* -------------------INTRODUCTION-------------------------------- */
+#introduction{
+    scroll-margin-top: 80px;
+}
+#introduction-box{
+display: flex;
+
+}
+#introduction-section-heading{
+    
+    font-style: oblique;
+text-align: center;
+color: #DC143C;
+font-size: 80px;
+font-weight: bold;
+text-decoration:underline ;
+margin-bottom: 50px;
+margin-top: 150px;;
+}
+#myimage{
+    width:1fr;
+   margin-right: 20px;
+ 
+}
+.section-content{
+    width:5fr;
+    font-style: normal;
+  font-size: 60px;
+  line-height: 1.5;
+    vertical-align: top;
+    word-wrap: break-word;      
+    overflow-wrap: break-word;   
+    hyphens: auto;   
+}
+.introduction-table{
+    color:rgb(60, 19, 192);
+    display:inline-block;
+    font-weight: bold;
+}
+.table-heading:hover{
+text-decoration: underline;
+}
+.introduction-table li{
+ 
+    color:antiquewhite;
+}
+.introduction-table li:hover{
+ 
+    text-decoration: underline;
+
+}
+/* -------------------TIMELINE-------------------------------- */
+#timeline{
+    scroll-margin-top: 80px;
+}
+#timeline-section-heading{
+    font-style: oblique;
+text-align: center;
+color: #DC143C;
+font-size: 80px;
+font-weight: bold;
+text-decoration:underline ;
+margin-bottom: 50px;
+margin-top: 150px;;
+}
+.sem-number{
+display: inline-block;
+    font-size: 60px;
+    color:deepskyblue;
+  text-decoration: wavy;
+  margin-bottom: 60px;
+}
+#sem1{
+    margin-bottom: 30px;
+    
+    }
+
+.sem-content{
+  
+        word-wrap: break-word;      
+        overflow-wrap: break-word;   
+        hyphens: auto;               
+      margin-bottom: 60px;
+font-size:60px;
+}
+#sem2{
+    margin-bottom: 30px;
+}
+.sem-img{
+display:flex;
+width:100%;
+flex-wrap:no wrap;
+justify-content: space-between;
+margin-bottom: 40px;
+}
+.sem-img img{
+
+    width:400px;
+    object-fit: cover;
+}
+
+#sem3{
+    margin-bottom: 30px;   
+}
+#sem4{
+    margin-bottom: 60px;;
+}
+
+/* ----------------------LEARNING AND GROWTH ----------------------- */
+
+#learning-and-growth{
+    scroll-margin-top: 80px;
+}
+#learning-and-growth {
+  
+    background-color:black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #learning-and-growth h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #1e2a78;
+  }
+  
+  .growth-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .growth-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 350px;
+    flex: 1 1 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .growth-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .growth-box h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  
+  .growth-box p,
+  .growth-box ul {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .growth-box ul {
+    padding-left: 20px;
+  }
