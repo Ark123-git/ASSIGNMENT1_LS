@@ -1,3 +1,6 @@
+
+
+
 *{
    margin:0;
    padding:0;
@@ -8,8 +11,7 @@
 body{
     background-color:black;
     color:white;
-    width:100%;
-    height: 100%;
+   
 }
 
 .container{
@@ -34,7 +36,7 @@ z-index:1000;
 .iitb-logo{
     width:50px;
     object-fit: cover;
-    margin-right: 500px;
+    margin-right: 0px;
   
 }
 nav{
@@ -59,15 +61,18 @@ nav ul li a{
 }
 nav ul li a::after{
     content:'';
-    width:0;
+   
     height:4px;
     background-color: rgb(10, 77, 246);
     position: absolute;
     left:0;
     bottom:-6px;
- transition: width 0.4s ease;
+ transition: width 0.6s ease;
 }
 nav ul li a:hover::after{
+    width:100%;
+}
+nav ul li a.active::after{
     width:100%;
 }
 
@@ -96,9 +101,11 @@ margin-bottom: 40px;
 /* -------------------INTRODUCTION-------------------------------- */
 #introduction{
     scroll-margin-top: 80px;
+    margin-bottom: 150px;
 }
 #introduction-box{
 display: flex;
+flex-wrap:no wrap;
 
 }
 #introduction-section-heading{
@@ -125,7 +132,8 @@ margin-top: 150px;;
     vertical-align: top;
     word-wrap: break-word;      
     overflow-wrap: break-word;   
-    hyphens: auto;   
+    hyphens: auto;  
+    font-style: italic; 
 }
 .introduction-table{
     color:rgb(60, 19, 192);
@@ -139,14 +147,15 @@ text-decoration: underline;
  
     color:antiquewhite;
 }
-.introduction-table li:hover{
- 
+.introduction-table li span:hover{
+ display: inline-block;
     text-decoration: underline;
 
 }
 /* -------------------TIMELINE-------------------------------- */
 #timeline{
     scroll-margin-top: 80px;
+    margin-bottom: 150px;
 }
 #timeline-section-heading{
     font-style: oblique;
@@ -156,7 +165,7 @@ font-size: 80px;
 font-weight: bold;
 text-decoration:underline ;
 margin-bottom: 50px;
-margin-top: 150px;;
+margin-top: 0px;
 }
 .sem-number{
 display: inline-block;
@@ -171,7 +180,7 @@ display: inline-block;
     }
 
 .sem-content{
-  
+    font-style: italic;
         word-wrap: break-word;      
         overflow-wrap: break-word;   
         hyphens: auto;               
@@ -184,7 +193,7 @@ font-size:60px;
 .sem-img{
 display:flex;
 width:100%;
-flex-wrap:no wrap;
+flex-wrap: wrap;
 justify-content: space-between;
 margin-bottom: 40px;
 }
@@ -193,7 +202,9 @@ margin-bottom: 40px;
     width:400px;
     object-fit: cover;
 }
-
+.sem-img img:hover{
+    transform: translate(0px,50px);
+}
 #sem3{
     margin-bottom: 30px;   
 }
@@ -203,14 +214,13 @@ margin-bottom: 40px;
 
 /* ----------------------LEARNING AND GROWTH ----------------------- */
 
-#learning-and-growth{
-    scroll-margin-top: 80px;
-}
 #learning-and-growth {
-  
+    scroll-margin-top: 80px;
     background-color:black;
     font-family: Arial, sans-serif;
     text-align: center;
+    margin-bottom: 150px;
+    font-style: italic;
   }
   
   #learning-and-growth h2 {
@@ -258,3 +268,184 @@ margin-bottom: 40px;
   .growth-box ul {
     padding-left: 20px;
   }
+
+
+
+  /* ----------PHOTO GALLERY------------------ */
+  #photo-gallery{
+    scroll-margin-top:80px;
+    margin-bottom:100px;
+  }
+#gallery-container{
+  
+display:grid;
+grid-template-columns:1fr 1fr 1fr 1fr ;
+gap:20px;
+}
+.photo-gallery-img{
+/* Fit into the grid cell */
+width:100%;
+height:100%;
+    /* Avoid extra space below */
+ object-fit: cover;
+}
+.photo-gallery-img:hover{
+    transform: scale(1.3);
+}
+.photo-gallery-div{
+height:230px;
+}
+/* ---------------COMMENTS------------------ */
+#comments button{
+    background:linear-gradient(#d31010, #ff9472);
+    height:40px;
+    width: 100px;
+    font-size: 1.6em;
+    color: white;
+    border-radius: 10px;
+}
+#comments h1{
+    text-align:center;
+    font-style: oblique;
+    text-align: center;
+    color: #DC143C;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration:underline ;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+#messageForm label{
+
+    font-size: 1.5em;;
+}
+#contact {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  } 
+/* ----------------------Footer----------------------- */
+footer {
+    background-color: #284360;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    font-size:1.4em ;
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #4dabf7;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+
+
+
+
+/*----------------- MEDIA -------------*/
+@media(max-width:500px){
+    *{
+    font-size:25px;
+    margin:0;
+    padding:0;
+    
+    }
+    #introduction-section-heading{
+       font-size:  50px;
+    }
+    #myimage{
+        width:400px;
+     
+       margin-right: 20px;
+     
+    }
+    #myimage img{
+        width:200px;
+        height: 400px;
+        object-fit: contain;
+    }
+    #introduction-box{
+        display: flex;
+        flex-wrap: wrap;
+        
+        }
+        .introduction-table{
+            color:rgb(60, 19, 192);
+            display:inline-block;
+            font-weight: bold;
+            margin-right: 30px !important;
+        }
+#home-p{
+font-size: 25px;
+
+}
+#home-section-heading{
+    font-size: 40px;
+    padding-top: 50px;
+   
+    }
+    #iitb-text{
+        font-size: 40px;
+        color:brown
+     }
+     footer p {
+        font-size: 1.2em;
+        margin: 0;
+      }
+
+      .footer-links a {
+        font-size:1.0em ;
+
+      }
+      footer {
+        background-color: #284360;
+        color: #ffffff;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+      }
+      .footer-links {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+      }
+      #comments button{
+        font-size: 1.0em;
+      }
+}

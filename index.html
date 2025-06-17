@@ -10,14 +10,14 @@
 
    <div class="container">
 <nav>
-<img src="Photos/iitb-logo.png" class="iitb-logo">
+<a > <img src="Photos/iitb-logo.png" class="iitb-logo"></a>
 <ul>
-    <li>   <a href="#home">Home</a>   </li> 
+    <li>   <a href="#home" >Home</a>   </li> 
 <li>   <a href="#introduction">Introduction</a>   </li> 
-<li>   <a href="#timeline">Timeline</a>   </li>    
-<li>   <a href="#learning-and-growth">Learning and Growth</a>   </li>    
+<li>   <a href="#timeline">Timeline </a>   </li>    
+<li>   <a href="#learning-and-growth" >Learning and Growth</a>   </li>    
 <li>   <a href="#photo-gallery">Photo Gallery</a>   </li>    
-<li>   <a href="#"> Form  </a> </li>       
+<li>   <a href="#comments" > Comments </a> </li>       
 </ul>
 </nav>
    </div>
@@ -44,7 +44,7 @@
     <div class="section-content">
       
     
-     <p> Hi! I'm Ark Singh, an undergraduate student at the MEMS department of IIT Bombay.I am from Mumbai.
+     <p>  I am Ark Singh, an undergraduate student at the MEMS department of IIT Bombay.I am from Mumbai.
        My journey here has been a blend of exciting experiences,
         academic growth,
         new friendships, and unforgettable memories.</p>
@@ -52,17 +52,18 @@
 
         <ul class="introduction-table" style="margin-right:300px">
         <span class="table-heading">My Hobbies</span> 
-          <li>Football</li>  
-          <li>Chess</li>  
-          <li>Gym</li>  
-          <li>Swimming</li>  
+          <li><span>Football</span></li>  
+          <li><span>Chess</span></li>  
+          <li><span>Gym</span></li>  
+          <li><span>Swimming</span></li>  
+        
         </ul>
         <ul class="introduction-table">
            <span class="table-heading">My skills</span>
-            <li>C++</li>  
-            <li>Python</li>  
-            <li>JavaScript</li>  
-            <li>HTML/CSS</li>  
+           <li><span>C++</span></li>  
+           <li><span>Python</span></li>  
+           <li><span>JavaScript</span></li>  
+           <li><span>HTML/CSS</span></li> 
           </ul>
    
     
@@ -210,6 +211,8 @@
           <li>Python, C++, HTML/CSS</li>
           <li>Git & GitHub</li>
           <li>Public Speaking & Teamwork</li>
+          <li>Software/tools like MATLAB, SolidWorks, AutoCAD, and LaTeX</li>
+          <li>Core engineering concepts </li>
         </ul>
       </div>
     </div>
@@ -220,9 +223,102 @@
 
 <!-------------- PHOTO GALLERY-------------->
 
+<section id="photo-gallery">
+    <h1 id="timeline-section-heading">PHOTO GALLERY</h1>
+
+<div id="gallery-container">
+    <div class="photo-gallery-div"><img src="Photos/img1.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img2.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img3.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img4.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img5.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img6.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img7.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img8.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img9.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img10.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/sem1_1.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/sem1_2.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/sem2_1.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/sem2_2.avif" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/sem3_1.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/sem3_2.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/sem1_3.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/sem2_3.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/sem3_3.jpeg" class="photo-gallery-img" alt="Image"></div>
+    <div class="photo-gallery-div"><img src="Photos/img11.jpeg" class="photo-gallery-img" alt="Image"></div>
+</div>
 
 
 
+</section>
+<!--------------------------------------------- COMMENTS ----------------------------->
+<section id="comments">
+    
+      <h1>COMMENTS</h1> 
+        <form id="messageForm">
+          <label for="name">Name:</label>
+          <input type="text" placeholder="ENTER YOUR NAME" id="name"   required>
+      
+          <label for="email">Email:</label>
+          <input type="email" placeholder="ENTER YOUR EMAIL" id="email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message"placeholder="ENTER YOUR MESSAGE"  rows="5" required></textarea>
+      
+          <button type="submit">Submit</button>
+        </form>
+       
+    
+        <div id="confirmation" style="display:none; margin-top: 20px; color: green;">
+           Thank you! Your message has been saved.
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------FOOTER ------------------------------------------->
+<footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="https://www.iitb.ac.in/" target="_blank">IITB Official</a>
+        <a href="https://www.iitb.ac.in/mems/en" target="_blank">Department Page</a>
+        <a href="https://github.com/Ark123-git" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ark-singh-55526a293/" target="_blank">LinkedIn</a>
+      </div>
+      <p>&copy; &nbsp Ark Singh  &nbsp |  &nbsp IIT Bombay |  &nbsp 2025</p>
+    </div>
+  </footer>
 
 
 
